@@ -1,0 +1,51 @@
+:root {
+    --primary: #212E48 ;
+    --secondary: #01A1FC;
+    --dark:#1A1A1B ;
+    --success: #00a3ff ;
+  }
+
+  .bg-dark {
+    background-color: var(--dark) !important;
+  }
+  .text-dark {
+    color: var(--dark) !important;
+  }
+
+
+
+  .bg-primary {
+    background-color: var(--primary) !important;
+  }
+  .text-primary {
+    color: var(--primary) !important;
+  }
+  .text-muted {
+    color: #acacac !important;
+  }
+
+
+
+  .bg-secondary {
+    background-color: var(--secondary) !important;
+  }
+  .text-secondary {
+    color: var(--secondary) !important;
+  }
+
+
+
+  .bg-success {
+    background-color: var(--success)  !important;
+  }
+  .text-success {
+    color: var(--success) !important;
+  }
+  .btn-primary{
+    background-color: var(--primary) !important;
+  }
+
+  .btn-success {
+    background-color: var(--success)  !important;
+  }
+

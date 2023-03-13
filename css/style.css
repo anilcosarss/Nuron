@@ -1,0 +1,515 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main section.live-bidding {
+  padding: 0px;
+  padding-bottom: 50px;
+}
+main section.live-bidding .live-bidding-header {
+  padding-bottom: 20px;
+  padding-top: 70px;
+}
+main section.live-bidding .live-bidding-header .circle-animation {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--success);
+  margin-right: 10px;
+}
+main section.live-bidding .live-bidding-header h3 {
+  font-size: 35px;
+}
+main section.live-bidding .live-bidding_same-card {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+}
+main section.live-bidding .live-bidding_same-card .live-bidding-img-container {
+  overflow: hidden;
+  border: 8px solid var(--primary);
+  border-radius: 10px;
+}
+main section.live-bidding .live-bidding_same-card .live-bidding-img-container img {
+  padding: 0px;
+  transition: 0.5s;
+}
+main section.live-bidding .live-bidding_same-card:hover .live-bidding-img-container img {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+main section.live-bidding .live-bidding_same-card:hover::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 95%;
+  height: 96%;
+  top: 30px;
+  left: 0px;
+  background: rgb(0, 163, 255);
+  background: linear-gradient(-45deg, rgb(0, 163, 255) 0%, rgb(17, 19, 20) 100%);
+  border-radius: 10px;
+  transform: rotate(3deg);
+  -webkit-animation: myMove 0.5s ease-out;
+          animation: myMove 0.5s ease-out;
+}
+@-webkit-keyframes myMove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+@keyframes myMove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+main section.live-bidding .live-bidding_same-card .live-bidding-img {
+  width: 100%;
+  border-radius: 8px;
+  padding: 5px;
+}
+main section.live-bidding .live-bidding_same-card .live-bidding-content {
+  margin: 0px 15px;
+}
+main section.live-bidding .live-bidding_same-card .same-card-profile img {
+  position: relative;
+  border-radius: 50%;
+  width: 30px;
+}
+main section.live-bidding .live-bidding_same-card .same-card-profile .second-img {
+  left: -15px;
+}
+main section.live-bidding .live-bidding_same-card .same-card-profile .third-img {
+  left: -30px;
+}
+main section.live-bidding .live-bidding_same-card .same-card-profile .place-bit {
+  position: relative;
+  left: -15px;
+  font-size: 15px;
+}
+main section.top-collection {
+  padding-top: 40px;
+}
+main section.top-collection .collection-same-card {
+  background-color: #1A1A20;
+}
+main section.top-collection .collection-same-card:hover .collection-card-header img {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+main section.top-collection .collection-same-card .collection-card-header {
+  border: 8px solid #1A1A20;
+  overflow: hidden;
+}
+main section.top-collection .collection-same-card .collection-card-header img {
+  width: 100%;
+  transition: 0.5s;
+}
+main section.top-collection .collection-same-card .top-collection-card-content .center-img {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid var(--primary);
+  top: -30px;
+}
+main section.top-collection .collection-same-card .top-collection-card-footer button {
+  padding: 5px;
+}
+main section.top-collection .collection-same-card .top-collection-card-footer button:hover {
+  background-color: var(--success) !important;
+}
+main section.products {
+  padding-top: 90px;
+}
+main section.products ul li button {
+  margin: 0px 5px;
+  background-color: transparent !important;
+  border: 0.3px solid rgba(228, 228, 228, 0.2) !important;
+  border-radius: 20px !important;
+  padding: 15px 35px;
+  color: #acacac;
+  border-radius: 30px !important;
+}
+main section.products ul li button:hover {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--success) !important;
+}
+main section.products ul li button:focus {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--success) !important;
+}
+main .live-bidding-header {
+  padding-bottom: 20px;
+  padding-top: 70px;
+}
+main .live-bidding-header .circle-animation {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--success);
+  margin-right: 10px;
+}
+main .live-bidding-header h3 {
+  font-size: 35px;
+}
+main .live-bidding_same-card {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+}
+main .live-bidding_same-card .live-bidding-img-container {
+  overflow: hidden;
+  border: 8px solid var(--primary);
+  border-radius: 10px;
+}
+main .live-bidding_same-card .live-bidding-img-container img {
+  padding: 0px;
+  transition: 0.5s;
+}
+main .live-bidding_same-card:hover .live-bidding-img-container img {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+main .live-bidding_same-card:hover::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 95%;
+  height: 96%;
+  top: 30px;
+  left: 0px;
+  background: rgb(0, 163, 255);
+  background: linear-gradient(-45deg, rgb(0, 163, 255) 0%, rgb(17, 19, 20) 100%);
+  border-radius: 10px;
+  transform: rotate(3deg);
+  -webkit-animation: myMove 0.5s ease-out;
+          animation: myMove 0.5s ease-out;
+}
+@keyframes myMove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+main .live-bidding_same-card .live-bidding-img {
+  width: 100%;
+  border-radius: 8px;
+  padding: 5px;
+}
+main .live-bidding_same-card .live-bidding-content {
+  margin: 0px 15px;
+}
+main .live-bidding_same-card .same-card-profile img {
+  position: relative;
+  border-radius: 50%;
+  width: 30px;
+}
+main .live-bidding_same-card .same-card-profile .second-img {
+  left: -15px;
+}
+main .live-bidding_same-card .same-card-profile .third-img {
+  left: -30px;
+}
+main .live-bidding_same-card .same-card-profile .place-bit {
+  position: relative;
+  left: -15px;
+  font-size: 15px;
+}
+main section.purchasing .same-card-easyer h4, main section.purchasing .same-card-easyer a, main section.purchasing .same-card-easyer img, main section.purchasing .same-card-easyer p {
+  transition: transform 0.3s ease-in-out;
+}
+main section.purchasing .same-card-easyer:hover h4, main section.purchasing .same-card-easyer:hover a, main section.purchasing .same-card-easyer:hover p, main section.purchasing .same-card-easyer:hover img {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+main section.purchasing .same-card-easyer:hover h4, main section.purchasing .same-card-easyer:hover a {
+  color: var(--success) !important;
+}
+main section.purchasing .same-card-easyer .make-easyer-img {
+  position: absolute;
+  max-width: 80px;
+  right: -20px;
+  top: -20px;
+}
+main section.notification .dropdown-menu li {
+  border-bottom: 1px solid rgba(195, 195, 196, 0.2);
+}
+main section.notification .notification-content {
+  height: 390px;
+  padding: 20px 0px;
+  overflow-y: auto;
+}
+main section.notification .notification-content::-webkit-scrollbar {
+  width: 6px;
+}
+main section.notification .notification-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--success);
+}
+main section.notification .notification-content .notification-items {
+  border-bottom: 1px solid rgba(195, 195, 196, 0.2);
+}
+main section.notification .notification-content .notification-items h6 {
+  transition: 0.5s;
+}
+main section.notification .notification-content .notification-items h6:hover {
+  color: var(--success) !important;
+  transition: 0.5s;
+}
+main section.notification .notification-content .notification-items img {
+  border: 2px solid var(--primary);
+  transition: 0.5s;
+}
+main section.notification .notification-content .notification-items :hover img {
+  border-color: var(--success);
+  transition: 0.5s;
+}
+main section.top-artist {
+  border-bottom: 1px solid rgba(195, 195, 196, 0.2);
+}
+main section.top-artist .dropdown-menu li {
+  border-bottom: 1px solid rgba(195, 195, 196, 0.2);
+}
+main section.top-artist .artist-content {
+  height: 290px;
+  padding: 30px 20px;
+  overflow-y: auto;
+}
+main section.top-artist .artist-content::-webkit-scrollbar {
+  width: 6px;
+}
+main section.top-artist .artist-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--success);
+}
+main section.top-artist .artist-content .artist-items {
+  border-bottom: 1px solid rgba(195, 195, 196, 0.2);
+}
+main section.top-artist .artist-content .artist-items h6 {
+  transition: 0.5s;
+}
+main section.top-artist .artist-content .artist-items h6:hover {
+  color: var(--success) !important;
+  transition: 0.5s;
+}
+main section.top-artist .artist-content .artist-items img {
+  max-width: 50px;
+  border: 2px solid var(--primary);
+  transition: 0.5s;
+}
+main section.top-artist .artist-content .artist-items :hover img {
+  border-color: var(--success);
+  transition: 0.5s;
+}
+main section.top-artist .artist-content .artist-items button:hover {
+  background-color: var(--success) !important;
+}
+
+aside {
+  z-index: 1;
+  position: fixed;
+  background-color: #202028;
+  min-width: 286px;
+  height: 100vh;
+  overflow-y: auto;
+}
+aside::-webkit-scrollbar {
+  width: 6px;
+}
+aside::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--success);
+}
+aside ul {
+  padding-top: 40px;
+  list-style: none;
+}
+aside ul li {
+  margin: 10px 0px;
+}
+aside ul li:not(li:last-child):hover a {
+  position: relative;
+}
+aside ul li:not(li:last-child):hover a i {
+  background-color: var(--success);
+  transition: 0.5s;
+}
+aside ul li:not(li:last-child):hover a::after {
+  transition: 2s;
+  position: absolute;
+  content: "";
+  height: 140%;
+  top: -10px;
+  border-radius: 10px;
+  left: 210px;
+  width: 3px;
+  background-color: var(--success);
+}
+aside ul li:first-child {
+  margin-bottom: 40px;
+}
+aside ul li:first-child img {
+  max-width: 110px;
+}
+aside ul li:nth-child(2) a {
+  position: relative;
+}
+aside ul li:nth-child(2) a::after {
+  position: absolute;
+  content: "";
+  height: 140%;
+  top: -10px;
+  border-radius: 10px;
+  left: 210px;
+  width: 3px;
+  background-color: var(--success);
+}
+aside ul li:nth-child(5) {
+  margin-bottom: 40px;
+}
+aside ul li a {
+  text-decoration: none;
+}
+aside ul li a span {
+  color: rgb(172, 172, 172);
+}
+aside ul li a i {
+  transition: 0.5s;
+  padding: 8px;
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: white;
+  margin-right: 12px;
+}
+aside ul li .profile-content {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  max-width: 210px;
+  background-color: #202028;
+}
+aside ul li .profile-content .profile-items {
+  position: relative;
+  top: -30px;
+}
+aside ul li .profile-content .profile-items .circle {
+  position: absolute;
+  top: 45px;
+  right: 75px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+  color: red;
+}
+
+header nav form .search {
+  background-color: #202028;
+}
+header nav form .search::-moz-placeholder {
+  color: white;
+}
+header nav form .search:-ms-input-placeholder {
+  color: white;
+}
+header nav form .search::placeholder {
+  color: white;
+}
+header nav form .search:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: #202028;
+  color: white;
+}
+header nav form button {
+  transition: 0.3;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+header nav form button:hover {
+  background-color: var(--success) !important;
+  transition: 0.3;
+}
+header nav .navbar-nav .nav-item {
+  transition: 0.3s;
+  background-color: var(--primary);
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .navbar-nav .nav-item:hover {
+  background-color: var(--success);
+  transition: 0.3s;
+}
+header nav .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+header nav .navbar-nav .wallet {
+  width: auto;
+  padding: 0px 10px;
+}
+header .header-start {
+  padding: 80px 10px;
+  background-image: url(../img/start-bckround-img.webp);
+  background-size: cover;
+  background-position: center;
+}
+header .header-start .header-start-text p {
+  font-size: 18px;
+}
+header .header-start .header-start-text .header-start-profiles img {
+  max-width: 25px;
+}
+header .header-start .header-start-text .header-start-profiles .second-img {
+  position: relative;
+  left: -13px;
+}
+header .header-start .header-start-text .header-start-profiles .third-img {
+  position: relative;
+  left: -26px;
+}
+header .header-start .header-start-title {
+  font-size: 40px;
+  font-weight: medium;
+  padding-left: 30px;
+}
+@media (max-width: 1200px) {
+  header .header-start .header-start-title {
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+}
+.content-container {
+  padding: 20px 20px;
+  padding-left: 320px;
+  background-color: #0d0d0d;
+}
+@media (max-width: 992px) {
+  .content-container {
+    padding-left: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
